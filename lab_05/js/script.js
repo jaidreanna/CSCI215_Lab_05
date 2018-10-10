@@ -5,7 +5,7 @@ console.clear();
 // Task 1
 //-------
 
-var divNode = document.getElementByID('fiddle');
+var divNode = document.getElementById('fiddle');
 
 
 
@@ -15,13 +15,11 @@ var divNode = document.getElementByID('fiddle');
 //-------
 
 
-var pNode = document.createElement("P");
+var pNode = document.createElement("p");
 var pTextnode = document.createTextNode("CSCI 215: Lab 5 Todo");
 
-Pnode.appendChild(pTextnode);
-
 pTextnode.appendChild(pNode);
-
+pNode.appendChild(pTextnode);
 
 
 //-----
