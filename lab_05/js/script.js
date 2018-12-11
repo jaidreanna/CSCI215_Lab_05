@@ -1,5 +1,5 @@
-console.clear();
 
+console.clear();
 
 //-------
 // Task 1
@@ -18,8 +18,8 @@ var divNode = document.getElementById('fiddle');
 var pNode = document.createElement("p");
 var pTextnode = document.createTextNode("CSCI 215: Lab 5 Todo");
 
-pTextnode.appendChild(pNode);
 pNode.appendChild(pTextnode);
+divNode.appendChild(pNode);
 
 
 //-----
@@ -30,7 +30,7 @@ pNode.appendChild(pTextnode);
 var hrNode = document.createElement("hr");
 
 
-divNode.document.body.appendChild(hrNode);
+divNode.appendChild(hrNode);
 
 
 
@@ -40,11 +40,11 @@ divNode.document.body.appendChild(hrNode);
 //Task 4
 //------
 
-var olNode = document.createElement("OL");
+var olNode = document.createElement("ol");
 
-var liNode1 = document.createElement("LI");
+var liNode1 = document.createElement("li");
 
-var liNode2 = document.createElement("LI2");
+var liNode2 = document.createElement("li2");
 
 var liTextNode1 = document.createTextNode("Read Assignment");
 
@@ -57,7 +57,7 @@ liNode2.appendChild(liTextNode2);
 
 olNode.appendChild(liNode1);
 
-olNodeappendChild(liNode2);
+olNode.appendChild(liNode2);
 
 divNode.appendChild(olNode);
 
@@ -70,16 +70,13 @@ divNode.appendChild(olNode);
 
 var imgNode = document.createElement("img");
 
-var srcAttr = document.getElementbyId("img");
+var srcAttr = document.createAttribute("src");
 
-var srcAttr = document.createElement("src");
-
-
-scAttr.value = "http://munsellb.people.cofc.edu/img/prettypicture.jpg";
+srcAttr.value= "http://munsellb.people.cofc.edu/img/prettypicture.jpg";
 
 imgNode.setAttributeNode(srcAttr);
 
-divNode.appendchild(imgNode);
+divNode.appendChild(imgNode);
 
 
 
